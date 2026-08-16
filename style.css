@@ -1,0 +1,817 @@
+/* =====================================
+Horizon v1.0
+Author : Mizuna
+===================================== */
+
+/* =====================================
+BASE
+===================================== */
+
+body{
+margin:0;
+font-family:"Segoe UI",sans-serif;
+color;
+text-align;
+overflow-y;
+}
+
+/* =====================================
+HERO
+===================================== */
+
+.hero{
+min-height:100vh;
+
+background:...;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:20px;
+box-sizing:border-box;
+
+position:relative;
+overflow:hidden;
+
+transition:
+background 0.8s ease,
+box-shadow 0.8s ease;
+}
+
+/* =====================================
+HERO THEMES
+===================================== */
+
+.hero.trailhead{
+background:
+linear-gradient(
+180deg,
+#1f3b73 0%,
+#355c9a 45%,
+#f2a65a 100%
+);
+}
+
+.hero.forest{
+background:
+linear-gradient(
+180deg,
+#1d3b2a 0%,
+#2f5d3f 45%,
+#4d7c59 100%
+);
+}
+
+.hero.ridge{
+background:
+linear-gradient(
+180deg,
+#3b4a5a 0%,
+#5d6d7e 45%,
+#8a9aa8 100%
+);
+}
+
+.hero.snowfield{
+background:
+linear-gradient(
+180deg,
+#cfe8ff 0%,
+#a8d3f0 45%,
+#eaf6ff 100%
+);
+}
+
+.hero.summit{
+background:
+linear-gradient(
+180deg,
+#5b4b8a 0%,
+#9b7edc 45%,
+#ffd166 100%
+);
+}
+
+/* =====================================
+CONTENT CARD
+===================================== */
+
+.content{
+width:90%;
+max-width:400px;
+
+background(0,0,0,0.15);
+backdrop-filter(8px);
+
+padding:25px;
+border-radius:25px;
+
+box-shadow:
+0 8px 30px rgba(0,0,0,0.25);
+}
+
+/* =====================================
+TYPOGRAPHY
+===================================== */
+
+h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.altitude{
+margin:30px 0;
+}
+
+.altitude span{
+opacity:0.8;
+}
+
+.altitude h2{
+font-size:52px;
+margin:10px 0;
+}
+
+#rank{
+font-size:20px;
+margin:10px 0;
+font-weight;
+}
+
+#nextRank{
+opacity:0.9;
+margin-bottom:10px;
+}
+
+#message{
+margin-bottom:40px;
+opacity:0.9;
+}
+
+/* =====================================
+BUTTONS
+===================================== */
+
+button{
+width:100%;
+padding:18px;
+
+border;
+border-radius:15px;
+
+font-size:18px;
+cursor;
+
+transition 0.2s ease;
+}
+
+/* Hover */
+
+button{
+transform(-2px);
+}
+
+/* Click */
+
+button{
+transform(0);
+}
+
+/* =====================================
+TEXTAREA
+===================================== */
+
+textarea{
+width:100%;
+box-sizing:border-box;
+
+padding:10px;
+border-radius:10px;
+
+resize:vertical;
+
+margin-bottom:20px;
+}
+/* =====================================
+PROGRESS BAR
+===================================== */
+
+.progress-bar{
+width:100%;
+height:16px;
+
+background(255,255,255,0.2);
+
+border-radius:20px;
+overflow;
+
+margin-top:10px;
+}
+
+#progress-fill{
+height:100%;
+width:0%;
+
+background;
+
+border-radius:20px;
+
+transition 0.5s ease;
+}
+
+/* =====================================
+DIVIDER
+===================================== */
+
+hr{
+border:none;
+height:1px;
+background:rgba(255,255,255,0.2);
+margin:25px 0;
+}
+
+/* =====================================
+MOUNTAIN PATH
+===================================== */
+
+#mountainPath{
+margin:15px 0;
+font-size:22px;
+}
+
+#mountainPath span{
+opacity:0.3;
+transition:0.3s;
+}
+
+.active-step{
+opacity:1 !important;
+font-size:30px;
+}
+
+/* =====================================
+TRAIL LOG
+===================================== */
+
+#history{
+text-align;
+}
+
+#history div{
+background(255,255,255,0.1);
+padding:10px;
+margin:10px 0;
+border-radius:10px;
+}
+
+.log-card{
+background(255,255,255,0.10);
+border-radius:14px;
+padding:14px;
+margin:12px 0;
+box-shadow:0 6px 18px rgba(0,0,0,0.12);
+text-align;
+}
+
+.log-header{
+display;
+justify-content;
+align-items;
+gap:10px;
+margin-bottom:10px;
+flex-wrap;
+}
+
+.log-date{
+font-weight;
+font-size:15px;
+}
+
+.log-altitude{
+background(255,255,255,0.18);
+padding:4px 10px;
+border-radius:999px;
+font-size:13px;
+}
+
+.log-text{
+line-height:1.6;
+white-space;
+}
+
+/* =====================================
+TOAST
+===================================== */
+
+#achievementToast{
+position: fixed;
+top:50%;
+left:50%;
+transform: translate(-50%, -60%);
+background: rgba(20,20,30,0.9);
+color: white;
+padding:16px 22px;
+border-radius:14px;
+font-size:16px;
+font-weight: bold;
+box-shadow:0 8px 24px rgba(0,0,0,0.3);
+opacity:0;
+pointer-events:none;
+transition:
+opacity 0.4s ease,
+transform 0.4s ease;
+z-index:999;
+white-space:nowrap;
+text-align:center;
+max-width:80%;
+}
+
+#achievementToast.show{
+    opacity:1;
+    transform: translate(-50%, -50%);
+}
+
+/* ===== Trail Log Cards ===== */
+#history{
+display: flex;
+flex-direction: column;
+gap: 14px;
+margin-top: 16px;
+}
+
+.log-card.latest{
+background: rgba(255,255,255,0.18);
+border: 1px solid rgba(255,255,255,0.22);
+box-shadow: 0 14px 30px rgba(0,0,0,0.16);
+}
+
+.latest-badge{
+display: inline-block;
+font-size: 11px;
+font-weight: 700;
+padding: 4px 8px;
+border-radius: 999px;
+background: rgba(255,255,255,0.22);
+margin-bottom: 10px;
+letter-spacing: 0.04em;
+}
+
+.log-header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 12px;
+margin-bottom: 10px;
+}
+
+.log-date{
+font-size: 13px;
+opacity: 0.8;
+letter-spacing: 0.02em;
+}
+
+.log-altitude{
+font-size: 13px;
+font-weight: 700;
+padding: 6px 10px;
+border-radius: 999px;
+background: rgba(255,255,255,0.18);
+border: 1px solid rgba(255,255,255,0.12);
+white-space: nowrap;
+}
+
+.log-text{
+line-height: 1.7;
+font-size: 15px;
+white-space: pre-wrap;
+word-break: break-word;
+}
+
+/* =====================================
+   HERO EFFECTS
+===================================== */
+
+/* 共通の光レイヤー */
+.hero::before{
+content: "";
+position: absolute;
+width: 180px;
+height: 180px;
+top: 48px;
+right: 42px;
+pointer-events: none;
+z-index: 1;
+border-radius: 50%;
+
+background:
+    radial-gradient(circle,
+        rgba(255,255,255,0.30) 0%,
+        rgba(255,255,255,0.16) 28%,
+        rgba(255,255,255,0.07) 48%,
+        transparent 72%
+    );
+
+filter: blur(10px);
+animation: floatingLight 7s ease-in-out infinite;
+
+}
+
+.hero::after{
+content: "";
+position: absolute;
+left: -5%;
+width: 110%;
+bottom: 0;
+height: 42%;
+pointer-events: none;
+z-index: 0;
+
+background: rgba(20,30,50,0.28);
+
+clip-path: polygon(
+    0 100%,
+    0 72%,
+    12% 58%,
+    22% 68%,
+    34% 46%,
+    48% 70%,
+    63% 42%,
+    78% 66%,
+    90% 50%,
+    100% 70%,
+    100% 100%
+);
+
+}
+/* 中身を前面に */
+.hero .content{
+position: relative;
+z-index: 1;
+}
+
+/* 1. Trailhead */
+.hero.trailhead{
+background:
+linear-gradient(180deg, rgba(255,190,140,0.35), rgba(255,255,255,0.08)),
+linear-gradient(135deg, #f6c28b 0%, #e59a8f 45%, #7ea0d8 100%);
+box-shadow: 0 12px 40px rgba(230,150,120,0.18);
+}
+
+/* 2. Forest */
+.hero.forest{
+background:
+linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)),
+linear-gradient(135deg, #3e6b57 0%, #547f68 35%, #8db1a0 100%);
+box-shadow: 0 12px 40px rgba(40,80,60,0.22);
+}
+
+/* 3. Ridge */
+.hero.ridge{
+background:
+linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.03)),
+linear-gradient(135deg, #4d6f9e 0%, #6f8fc2 45%, #b9d0f0 100%);
+box-shadow: 0 12px 40px rgba(60,90,140,0.20);
+}
+
+/* 4. Snowfield */
+.hero.snowfield{
+background:
+linear-gradient(180deg, rgba(255,255,255,0.30), rgba(255,255,255,0.08)),
+linear-gradient(135deg, #d9e7f5 0%, #bdd2e8 45%, #93b4d7 100%);
+box-shadow: 0 12px 40px rgba(120,150,190,0.18);
+}
+
+/* 5. Summit */
+.hero.summit{
+background:
+radial-gradient(circle at top, rgba(255,255,255,0.22), transparent 35%),
+linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)),
+linear-gradient(135deg, #1d3557 0%, #3a4f8f 40%, #f2b880 100%);
+box-shadow: 0 12px 45px rgba(30,40,80,0.28);
+}
+/* ===== Mountain Layers ===== */
+
+
+.mountain-back,
+.mountain-front{
+position: absolute;
+left: -5%;
+width: 110%;
+pointer-events: none;
+transition:
+background 0.8s ease,
+opacity 0.8s ease;
+}
+
+/* 遠景 */
+.mountain-back{
+bottom: 90px;
+height: 180px;
+z-index: 1;
+opacity: 0.55;
+background: rgba(40, 55, 80, 0.28);
+clip-path: polygon(
+0 100%,
+0 70%,
+10% 58%,
+22% 66%,
+35% 44%,
+48% 62%,
+60% 48%,
+72% 64%,
+84% 46%,
+100% 68%,
+100% 100%
+);
+}
+
+/* 手前 */
+.mountain-front{
+bottom: 0;
+height: 220px;
+z-index: 2;
+opacity: 0.85;
+background: rgba(20, 30, 50, 0.35);
+clip-path: polygon(
+0 100%,
+0 76%,
+12% 60%,
+24% 72%,
+38% 42%,
+50% 70%,
+64% 38%,
+78% 66%,
+90% 50%,
+100% 72%,
+100% 100%
+);
+}
+/* ===== Stage-based Mountain Colors ===== */
+
+.hero.trailhead .mountain-back{
+background: rgba(120, 90, 110, 0.22);
+}
+.hero.trailhead .mountain-front{
+background: rgba(90, 70, 95, 0.34);
+}
+
+.hero.forest .mountain-back{
+background: rgba(45, 75, 60, 0.26);
+}
+.hero.forest .mountain-front{
+background: rgba(28, 58, 45, 0.38);
+}
+
+.hero.ridge .mountain-back{
+background: rgba(70, 95, 130, 0.24);
+}
+.hero.ridge .mountain-front{
+background: rgba(48, 70, 110, 0.36);
+}
+
+.hero.snowfield .mountain-back{
+background: rgba(180, 205, 225, 0.30);
+}
+.hero.snowfield .mountain-front{
+background: rgba(140, 170, 200, 0.42);
+}
+
+.hero.summit .mountain-back{
+background: rgba(90, 110, 170, 0.24);
+}
+.hero.summit .mountain-front{
+background: rgba(35, 45, 85, 0.42);
+}
+/* =====================================
+   ANIMATIONS
+===================================== */
+.hero::before{
+animation: skyGlow 4s ease-in-out infinite;
+}
+
+.mountain-back{
+animation: mountainBackFloat 5s ease-in-out infinite;
+transform-origin: center bottom;
+}
+
+.mountain-front{
+animation: mountainFrontFloat 4s ease-in-out infinite;
+transform-origin: center bottom;
+}
+
+@keyframes skyGlow{
+0%{
+transform: scale(1) translateY(0px);
+opacity: 1;
+}
+50%{
+transform: scale(1.08) translateY(-10px);
+opacity: 0.75;
+}
+100%{
+transform: scale(1) translateY(0px);
+opacity: 1;
+}
+}
+
+@keyframes mountainBackFloat{
+0%{
+transform: translateX(0px) translateY(0px);
+}
+50%{
+transform: translateX(20px) translateY(-8px);
+}
+100%{
+transform: translateX(0px) translateY(0px);
+}
+}
+
+@keyframes mountainFrontFloat{
+0%{
+transform: translateX(0px) translateY(0px);
+}
+50%{
+transform: translateX(-16px) translateY(-6px);
+}
+100%{
+transform: translateX(0px) translateY(0px);
+}
+}
+
+@keyframes floatingLight{
+0%{
+transform: translateY(0px) translateX(0px) scale(1);
+opacity: 0.72;
+}
+50%{
+transform: translateY(-8px) translateX(-5px) scale(1.06);
+opacity: 0.92;
+}
+100%{
+transform: translateY(0px) translateX(0px) scale(1);
+opacity: 0.72;
+}
+}
+
+/* ===== Summit Sparkle ===== */
+
+.summit-stars{
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.summit-stars::before,
+.summit-stars::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+}
+
+/* 星レイヤー1 */
+.summit-stars::before{
+    background:
+        radial-gradient(circle at 18% 22%, rgba(255,255,255,0.95) 0 2px, transparent 5px),
+        radial-gradient(circle at 32% 15%, rgba(255,255,255,0.85) 0 1.8px, transparent 5px),
+        radial-gradient(circle at 48% 24%, rgba(255,255,255,0.95) 0 2px, transparent 5px),
+        radial-gradient(circle at 62% 18%, rgba(255,255,255,0.80) 0 1.6px, transparent 5px),
+        radial-gradient(circle at 78% 26%, rgba(255,255,255,0.95) 0 2px, transparent 5px),
+        radial-gradient(circle at 86% 16%, rgba(255,255,255,0.80) 0 1.6px, transparent 5px);
+
+    animation: summitTwinkleA 2.4s ease-in-out infinite;
+}
+
+/* 星レイヤー2 */
+.summit-stars::after{
+    background:
+        radial-gradient(circle at 24% 28%, rgba(255,255,255,0.65) 0 1.4px, transparent 5px),
+        radial-gradient(circle at 54% 14%, rgba(255,255,255,0.55) 0 1.2px, transparent 5px),
+        radial-gradient(circle at 72% 20%, rgba(255,255,255,0.65) 0 1.4px, transparent 5px);
+
+    animation: summitTwinkleB 3.1s ease-in-out infinite;
+}
+
+.hero.summit .summit-stars{
+    opacity: 1;
+}
+
+@keyframes summitTwinkleA{
+    0%, 100%{
+        opacity: 0.45;
+        filter: drop-shadow(0 0 1px rgba(255,255,255,0.25));
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+        filter: drop-shadow(0 0 6px rgba(255,255,255,0.9));
+        transform: scale(1.03);
+    }
+}
+
+@keyframes summitTwinkleB{
+    0%, 100%{
+        opacity: 0.2;
+        filter: drop-shadow(0 0 0px rgba(255,255,255,0));
+        transform: scale(0.98);
+    }
+    50%{
+        opacity: 0.85;
+        filter: drop-shadow(0 0 4px rgba(255,255,255,0.75));
+        transform: scale(1.04);
+    }
+}
+
+/* ===== Toast Types ===== */
+
+#achievementToast.rank{
+background: linear-gradient(135deg,#4a90e2,#6a5acd);
+color: white;
+}
+
+#achievementToast.achievement{
+background: linear-gradient(135deg,#f6c453,#ff9f1c);
+color: white;
+}
+
+#achievementToast.info{
+background: rgba(40,40,50,0.92);
+color: white;
+}
+/* ===== Horizon Thought ===== */
+
+#dailyEnglish{
+margin-bottom:20px;
+}
+
+#englishSentence{
+font-size:22px;
+font-weight:600;
+line-height:1.5;
+margin-bottom:12px;
+}
+
+#horizonThought{
+font-size:15px;
+font-style:italic;
+opacity:0.75;
+line-height:1.6;
+}
+/* ==================================================
+   Mobile Layout
+================================================== */
+
+@media (max-width: 600px){
+
+    body{
+        padding: 12px;
+    }
+
+    .content{
+        width: 100%;
+        max-width: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    #dailyEnglish{
+        width: 100%;
+    }
+
+    #englishSentence{
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    #japaneseSentence{
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    #phraseProgress{
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    #listenBtn,
+    #speakBtn,
+    #prevEnglishBtn,
+    #nextEnglishBtn{
+        width: 100%;
+        min-height: 52px;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    #practiceMode{
+        width: 100%;
+        min-height: 44px;
+        font-size: 1rem;
+        margin-bottom: 12px;
+    }
+
+}

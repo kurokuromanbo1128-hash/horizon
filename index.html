@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="hero">
+
+        <div class="mountain-back"></div> 
+        <div class="mountain-front"></div> 
+        <div class="summit-stars"></div> 
+        
+        <div class="hero-content">
+
+        <div class="content">
+
+<h1>Horizon</h1> 
+<div class="altitude"> <span>Current Altitude</span> 
+<h2 id="altitude">0m</h2> 
+
+<p id="xpText">
+    ⭐ XP : 0
+</p>
+
+<p id="rank">🥾 Trailhead</p> 
+<p id="nextRank"></p> 
+<div id="mountainPath"> 
+<span id="step1">🥾</span> → 
+<span id="step2">🌲</span> → 
+<span id="step3">⛰️</span> → 
+<span id="step4">❄️</span> → 
+<span id="step5">🏔️</span> 
+</div> 
+<p id="streak">🔥 0 Days</p> 
+<p id="bestStreak">⭐ Best: 0 Days</p> 
+<div class="progress-bar"> 
+<div id="progress-fill"></div> 
+</div> 
+</div> 
+<div id="dailyEnglish">
+
+    <h3>🌄 Today's English</h3>
+
+<label for="practiceMode">
+    Practice
+</label>
+
+<select id="practiceMode">
+
+    <option value="Morning">
+        Morning
+    </option>
+
+    <option value="Conversation">
+        Conversation
+    </option>
+
+    <option value="Snowboard">
+        Snowboard
+    </option>
+
+    <option value="Photography">
+    Photography
+</option>
+
+<option value="Beach">
+    Beach
+</option>
+<option value="Meeting Someone">
+    Meeting Someone
+</option>
+</select>
+
+<p id="englishCategory">
+    📂 Morning
+</p>
+
+<p id="phraseProgress">
+    1 / 20
+</p>
+
+    <p id="englishSentence">
+        I will do my best today.
+    </p>
+
+<p id="japaneseSentence">
+    今日、精一杯頑張る。
+</p>
+
+    <p id="speakGuide">
+        🔊 Say it aloud 3 times.
+    </p>
+
+<button id="listenBtn">
+    🔊 Listen
+</button>
+
+<button id="speakBtn">
+    🎤 Speak
+</button>
+
+<button id="prevEnglishBtn">
+    ⬅️ Previous
+</button>
+
+<button id="nextEnglishBtn">
+    ➡️ Next Phrase
+</button>
+
+<p id="speechResult">
+    🎤 You said:
+</p>
+
+    <p id="horizonThought">
+        Every summit starts with one small step.
+    </p>
+
+</div>
+<p id="message"> One step is enough today. </p> 
+
+<label class="speak-check">
+    <input type="checkbox" id="spokenCheck">
+    I spoke today's English.
+</label>
+
+<button id="morningBtn" disabled>
+🌄 Take One Step
+</button> 
+<hr> 
+<h2>🌙 Night Journal</h2> 
+<textarea id="journal" rows="6" placeholder="Write 3 sentences about your day..." ></textarea>
+ 
+<button id="saveBtn"> Save Journal </button>
+ <hr> 
+ <h2>🏆 Achievements</h2>
+ <div id="achievements"></div> 
+<h2>📖 Trail Log</h2> 
+<div id="history"> No entries yet. </div> 
+<br> 
+
+<button id="resetBtn"> Reset Journey </button>
+ </div>
+ 
+    <div id="achievementToast"></div>
+
+    <script src="english.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
