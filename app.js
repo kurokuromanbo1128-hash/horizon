@@ -72,12 +72,6 @@ document.getElementById("nextEnglishBtn");
 const speechResult =
 document.getElementById("speechResult");
 
-const journal =
-document.getElementById("journal");
-
-const saveBtn =
-document.getElementById("saveBtn");
-
 const resetBtn =
 document.getElementById("resetBtn");
 
@@ -110,6 +104,27 @@ document.getElementById("japaneseSentence");
 
 const horizonThought =
 document.getElementById("horizonThought");
+
+/* ===== Night Talk ===== */
+
+const nightQuestion =
+document.getElementById("nightQuestion");
+
+const nightSpeakBtn =
+document.getElementById("nightSpeakBtn");
+
+const nightSpeechResult =
+document.getElementById("nightSpeechResult");
+
+const nightProgress =
+document.getElementById("nightProgress");
+
+const nightSummary =
+document.getElementById("nightSummary");
+
+const nextNightBtn =
+document.getElementById("nextNightBtn");
+
 
 
 /* ===== Daily English Data moved to english.js ===== */
@@ -1453,73 +1468,158 @@ localStorage.setItem(
 
 
 /* ==================================================
-   Night Journal
+   Night Talk
 ================================================== */
 
-function saveJournal(){
+const nightQuestions = [
+
+    "今日、何をした？",
+
+    "今日はどうだった？",
+
+    "明日は何をする？"
+
+];
+
+let currentNightQuestion = 0;
+
+let nightAnswers = [
+    "",
+    "",
+    ""
+];
+
+function updateNightQuestion(){
+
+    nightQuestion.textContent =
+    nightQuestions[currentNightQuestion];
+
+    nightProgress.textContent =
+    `${currentNightQuestion + 1} / ${nightQuestions.length}`;
+
+    nightSpeechResult.textContent =
+    "🎤 You said:";
+
+}
+
+function showNextNightQuestion(){
+
+    currentNightQuestion++;
+
+    if(currentNightQuestion >= nightQuestions.length){
+
+        currentNightQuestion = 0;
+
+    }
+
+    updateNightQuestion();
+
+}
+
+function speakNightAnswer(){
+
+    const SpeechRecognition =
+    window.SpeechRecognition ||
+    window.webkitSpeechRecognition;
+
+    if(!SpeechRecognition){
+
+        nightSpeechResult.textContent =
+        "❌ Speech recognition is not supported.";
+
+        return;
+
+    }
+
+    const recognition =
+    new SpeechRecognition();
+
+    recognition.lang = "en-US";
+    recognition.continuous = false;
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    recognition.onstart = () => {
+
+        nightSpeechResult.textContent =
+        "🎤 Listening...";
+
+        nightSpeakBtn.disabled = true;
+
+    };
+
+    recognition.onresult = (event) => {
+
+        const result =
+        event.results[0][0].transcript.trim();
+
+        nightAnswers[currentNightQuestion] = result;
+
+        nightSpeechResult.textContent =
+        "🎤 You said: " + result;
+
+        if(currentNightQuestion === nightQuestions.length - 1){
+
+    showNightSummary();
+
+    completeNightTalk();
+    
+}
+
+    };
+
+    recognition.onerror = (event) => {
+
+        nightSpeechResult.textContent =
+        "❌ Error: " + event.error;
+
+    };
+
+    recognition.onend = () => {
+
+        nightSpeakBtn.disabled = false;
+
+    };
+
+    recognition.start();
+
+}
+
+function showNightSummary(){
+
+    nightSummary.innerHTML =
+    "<h3>🌙 Tonight's Talk</h3>" +
+    "<p>1. " + nightAnswers[0] + "</p>" +
+    "<p>2. " + nightAnswers[1] + "</p>" +
+    "<p>3. " + nightAnswers[2] + "</p>";
+
+}
+
+function completeNightTalk(){
 
     const today =
     getTodayKey();
 
-
-    const lastJournal =
+    const lastNightTalk =
     localStorage.getItem(
-        "lastJournal"
+        "lastNightTalk"
     );
 
-
-    if(lastJournal === today){
+    if(lastNightTalk === today){
 
         showAchievementToast(
-            "Today's journey has already " +
-            "been recorded. 🌙",
+            "Today's Night Talk is already complete. 🌙",
             "info"
         );
 
         return;
 
     }
-
-
-    const text =
-    journal.value.trim();
-
-
-    if(text === ""){
-
-        showAchievementToast(
-            "Write something before saving. 🌙",
-            "info"
-        );
-
-        return;
-
-    }
-
 
     altitude += 10;
 
-
-    const entries =
-    getJournalEntries();
-
-
-    entries.unshift({
-
-        date: today,
-
-        altitude: altitude,
-
-        text: text
-
-    });
-
-
-    saveJournalEntries(entries);
-
-
     localStorage.setItem(
-        "lastJournal",
+        "lastNightTalk",
         today
     );
 
@@ -1528,29 +1628,21 @@ function saveJournal(){
         String(altitude)
     );
 
-
     altitudeText.textContent =
     `${altitude}m`;
-
-    journal.value = "";
-
 
     updateRank();
     updateMessage();
     updateAchievements();
     checkAchievements();
     recordActivity();
-    loadHistory();
-
 
     showAchievementToast(
-        "🌙 Journal saved!\nAltitude +10m",
+        "🌙 Night Talk Complete!\nAltitude +10m",
         "achievement"
     );
 
 }
-
-
 /* ==================================================
    Reset Journey
 ================================================== */
@@ -1680,12 +1772,7 @@ function registerEventListeners(){
         morningStep
     );
 
-    saveBtn.addEventListener(
-        "click",
-        saveJournal
-    );
-
-    resetBtn.addEventListener(
+        resetBtn.addEventListener(
         "click",
         resetJourney
     );
@@ -1714,6 +1801,16 @@ function registerEventListeners(){
         "change",
         handleSpokenCheckChange
     );
+
+    nightSpeakBtn.addEventListener(
+    "click",
+    speakNightAnswer
+);
+
+    nextNightBtn.addEventListener(
+    "click",
+    showNextNightQuestion
+);
 
     practiceMode.addEventListener(
         "change",
