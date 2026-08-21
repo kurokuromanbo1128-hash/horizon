@@ -99,6 +99,9 @@ document.getElementById("phraseProgress");
 const practiceMode =
 document.getElementById("practiceMode");
 
+const practiceOrder =
+document.getElementById("practiceOrder");
+
 const japaneseSentence =
 document.getElementById("japaneseSentence");
 
@@ -625,6 +628,30 @@ function showNextEnglish(){
 
     }
 
+    if(practiceOrder.value === "random"){
+
+    let newIndex;
+
+    do{
+
+        newIndex =
+        Math.floor(
+            Math.random() *
+            practiceEnglish.length
+        );
+
+    }
+    while(
+        newIndex === currentPracticeIndex &&
+        practiceEnglish.length > 1
+    );
+
+    currentPracticeIndex =
+    newIndex;
+
+}
+else{
+
     currentPracticeIndex++;
 
     if(
@@ -635,6 +662,8 @@ function showNextEnglish(){
         currentPracticeIndex = 0;
 
     }
+
+}
 
     const item =
     practiceEnglish[currentPracticeIndex];
@@ -1563,7 +1592,7 @@ function speakNightAnswer(){
     showNightSummary();
 
     completeNightTalk();
-    
+
 }
 
     };
@@ -1811,7 +1840,23 @@ function registerEventListeners(){
     "click",
     showNextNightQuestion
 );
+practiceOrder.addEventListener(
+    "change",
+    () => {
 
+        if(practiceOrder.value === "random"){
+
+            prevEnglishBtn.disabled = true;
+
+        }
+        else{
+
+            prevEnglishBtn.disabled = false;
+
+        }
+
+    }
+);
     practiceMode.addEventListener(
         "change",
         () => {
