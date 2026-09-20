@@ -155,9 +155,16 @@
         今日、何をした？
     </p>
 
+    <div id="nightGuide"></div>
+    <p>HintとBuild itは任意です。見ずに話してもOK。例文は自分の内容に変えて練習しましょう。</p>
+
     <button id="nightSpeakBtn">
-        🎤 Answer in English
+        🎤 Speak
     </button>
+
+    <label for="nightTypedAnswer">手入力・音声認識した英文の修正</label>
+    <textarea id="nightTypedAnswer" rows="3" lang="en" placeholder="自分の答えを英語で入力" maxlength="2000"></textarea>
+    <button id="nightSubmitBtn" type="button">この回答で練習・AI Coachへ</button>
 
     <p id="nightSpeechResult">
         🎤 You said:
@@ -188,6 +195,7 @@
     <div id="achievementToast"></div>
 
     <script src="english.js"></script>
+    <script src="night-guide.js"></script>
     <script src="app.js"></script>
     <script src="ai-night-talk.js"></script>
 
