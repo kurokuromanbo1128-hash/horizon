@@ -858,6 +858,366 @@ const dailyEnglish = [
     japanese: "また今度話そうよ。",
     thought: "End while keeping the connection."
 },
+{
+    category: "Conversation",
+    text: "Sorry I'm late.",
+    japanese: "遅れてごめんね。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Thanks for waiting.",
+    japanese: "待っていてくれてありがとう。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I have to go now.",
+    japanese: "もう行かないと。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Can I call you back later?",
+    japanese: "あとでかけ直してもいい？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I can't hear you very well.",
+    japanese: "声がよく聞こえない。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I'll text you the address.",
+    japanese: "住所をメッセージで送るね。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Did you get my message?",
+    japanese: "私のメッセージ、届いた？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I think you have the wrong number.",
+    japanese: "電話番号をお間違えだと思います。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Sorry, I didn't mean to interrupt.",
+    japanese: "ごめん、話を遮るつもりはなかったんだ。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Please go ahead.",
+    japanese: "どうぞ続けて。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Could we have the menu, please?",
+    japanese: "メニューをいただけますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I'd like a table for two.",
+    japanese: "2人用の席をお願いします。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Does this have nuts in it?",
+    japanese: "これにはナッツが入っていますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Can I have the dressing on the side?",
+    japanese: "ドレッシングを別にしてもらえますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I'm full, thank you.",
+    japanese: "お腹いっぱいです、ありがとう。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Could we have the bill, please?",
+    japanese: "お会計をお願いします。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Let's split the bill.",
+    japanese: "割り勘にしよう。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Is service included?",
+    japanese: "サービス料は含まれていますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Can I take the rest home?",
+    japanese: "残りを持ち帰れますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "That was delicious.",
+    japanese: "おいしかったです。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "How much does this cost?",
+    japanese: "これはいくらですか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I'm just looking, thanks.",
+    japanese: "見ているだけです、ありがとう。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Can I try this on?",
+    japanese: "これを試着できますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "This is a little too tight.",
+    japanese: "これは少しきついです。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Where is the fitting room?",
+    japanese: "試着室はどこですか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Do you take credit cards?",
+    japanese: "クレジットカードは使えますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Could I have a receipt?",
+    japanese: "レシートをいただけますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I brought my own bag.",
+    japanese: "自分の袋を持ってきました。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Can I return this?",
+    japanese: "これを返品できますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I'll think about it.",
+    japanese: "考えてみます。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Which bus goes to the airport?",
+    japanese: "空港行きのバスはどれですか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Is this the right platform?",
+    japanese: "このホームで合っていますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "How many stops is it from here?",
+    japanese: "ここから何駅ですか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Could you tell me when to get off?",
+    japanese: "降りるときに教えてもらえますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I think we're lost.",
+    japanese: "道に迷ったみたい。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Let's check the map.",
+    japanese: "地図を確認しよう。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Is it within walking distance?",
+    japanese: "歩いて行ける距離ですか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "The bus is running late.",
+    japanese: "バスが遅れている。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I missed my train.",
+    japanese: "電車に乗り遅れた。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Is this seat taken?",
+    japanese: "この席は空いていますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "What time does the store close?",
+    japanese: "お店は何時に閉まりますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Where can I charge my phone?",
+    japanese: "どこで携帯を充電できますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Could you turn the volume down?",
+    japanese: "音量を下げてもらえますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Would you mind closing the door?",
+    japanese: "ドアを閉めてもらえますか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I left my keys at home.",
+    japanese: "鍵を家に置いてきた。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I can't find my wallet.",
+    japanese: "財布が見つからない。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Could I borrow a pen?",
+    japanese: "ペンを借りてもいいですか？",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I'll give it back tomorrow.",
+    japanese: "明日返すね。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "It doesn't seem to be working.",
+    japanese: "動いていないみたい。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Let's ask someone for help.",
+    japanese: "誰かに助けを求めよう。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Congratulations on your new job!",
+    japanese: "新しい仕事が決まっておめでとう！",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I'm sorry to hear that.",
+    japanese: "それは残念だったね。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I hope you feel better soon.",
+    japanese: "早く元気になるといいね。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Good luck with your interview.",
+    japanese: "面接、頑張ってね。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "That's very kind of you.",
+    japanese: "ご親切にありがとう。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I appreciate your help.",
+    japanese: "助けてくれて感謝しています。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "You don't have to decide now.",
+    japanese: "今決めなくてもいいよ。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "I see it a little differently.",
+    japanese: "私は少し違う見方をしている。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "You're right about that.",
+    japanese: "その点はあなたの言うとおりだね。",
+    thought: "Use a short phrase in everyday conversation."
+},
+{
+    category: "Conversation",
+    text: "Let's agree on a time.",
+    japanese: "時間を決めよう。",
+    thought: "Use a short phrase in everyday conversation."
+},
 
 {
     category: "Snowboard",
@@ -1038,9 +1398,9 @@ const dailyEnglish = [
 },
 {
     category: "Snowboard",
-    text: "I'll follow you.",
-    japanese: "ついていくよ。",
-    thought: "A useful phrase when riding together."
+    text: "My board needs waxing.",
+    japanese: "ボードにワックスをかけないと。",
+    thought: "Take care of your gear."
 },
 {
     category: "Snowboard",
@@ -1062,9 +1422,9 @@ const dailyEnglish = [
 },
 {
     category: "Snowboard",
-    text: "My legs are getting tired.",
-    japanese: "脚が疲れてきた。",
-    thought: "Say how you're feeling."
+    text: "I can feel snow inside my boots.",
+    japanese: "ブーツの中に雪が入っているのが分かる。",
+    thought: "Describe a problem with your gear."
 },
 {
     category: "Snowboard",
@@ -1098,10 +1458,370 @@ const dailyEnglish = [
 },
 {
     category: "Snowboard",
-    text: "Let's do one more run.",
-    japanese: "もう一本行こう。",
-    thought: "One more run before calling it a day."
-}, 
+    text: "The slopes are getting crowded.",
+    japanese: "ゲレンデが混んできた。",
+    thought: "Notice the people around you."
+},
+{
+    category: "Snowboard",
+    text: "Where can I rent a snowboard?",
+    japanese: "スノーボードはどこで借りられますか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "These boots hurt my feet.",
+    japanese: "このブーツだと足が痛いです。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "How should I carry my board?",
+    japanese: "ボードはどうやって持ち運べばいいですか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Can you help me adjust the bindings?",
+    japanese: "ビンディングの調整を手伝ってもらえますか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I need a helmet that fits.",
+    japanese: "サイズの合うヘルメットが必要です。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "My goggles keep fogging up.",
+    japanese: "ゴーグルが何度も曇ってしまう。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I lost one of my gloves.",
+    japanese: "手袋を片方なくした。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Does the rental include boots?",
+    japanese: "レンタルにブーツは含まれていますか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "What time should I return the gear?",
+    japanese: "道具は何時に返せばいいですか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "My jacket isn't waterproof.",
+    japanese: "私のジャケットは防水ではない。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Where do I buy a lift ticket?",
+    japanese: "リフト券はどこで買えますか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Is there a half-day pass?",
+    japanese: "半日券はありますか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Which pocket should I put my pass in?",
+    japanese: "パスはどのポケットに入れればいいですか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "The ticket gate won't open.",
+    japanese: "チケットのゲートが開かない。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Does this lift go to the top?",
+    japanese: "このリフトは山頂まで行きますか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "How long is the lift ride?",
+    japanese: "リフトに乗っている時間はどのくらいですか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Let's lower the safety bar.",
+    japanese: "安全バーを下ろそう。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I'm nervous about getting off the lift.",
+    japanese: "リフトを降りるのが不安だ。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Is this lift still running?",
+    japanese: "このリフトはまだ動いていますか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "The lift line is moving quickly.",
+    japanese: "リフトの列は早く進んでいる。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Is there a beginner area?",
+    japanese: "初心者用のエリアはありますか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I'd like to book a lesson.",
+    japanese: "レッスンを予約したいです。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Is the lesson in English?",
+    japanese: "レッスンは英語ですか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Where should our group meet?",
+    japanese: "グループはどこに集合すればいいですか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "This is my first day on a snowboard.",
+    japanese: "スノーボードをするのは今日が初めてです。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I don't know which foot goes in front.",
+    japanese: "どちらの足を前にするか分かりません。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Can you show me how to stop?",
+    japanese: "止まり方を教えてもらえますか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I'm practicing my turns.",
+    japanese: "ターンを練習している。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I keep catching an edge.",
+    japanese: "何度もエッジを引っかけてしまう。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Could you watch me try?",
+    japanese: "やってみるので見てもらえますか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I need more space to turn.",
+    japanese: "曲がるにはもっとスペースが必要だ。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "This slope is too steep for me.",
+    japanese: "この斜面は私には急すぎる。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I'd rather take an easier route.",
+    japanese: "もっと簡単なルートを行きたい。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Is there a flat section ahead?",
+    japanese: "この先に平らな区間はありますか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "That trail is closed.",
+    japanese: "あのコースは閉鎖されている。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Let's stay on the marked trails.",
+    japanese: "標識のあるコース内を滑ろう。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "There are rocks near the edge.",
+    japanese: "端のほうに岩がある。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Watch out for the people below us.",
+    japanese: "私たちより下にいる人たちに気をつけて。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Let's stop where others can see us.",
+    japanese: "ほかの人から見える場所で止まろう。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Someone fell near the lift.",
+    japanese: "リフトの近くで誰かが転んだ。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Could you call the ski patrol?",
+    japanese: "スキーパトロールを呼んでもらえますか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I hurt my wrist when I fell.",
+    japanese: "転んだときに手首を痛めた。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I need to warm up inside.",
+    japanese: "中に入って体を温めたい。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "My socks are wet.",
+    japanese: "靴下が濡れている。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Do you have a spare hand warmer?",
+    japanese: "予備のカイロを持っている？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Where is the nearest rest area?",
+    japanese: "いちばん近い休憩所はどこですか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I left my bag in a locker.",
+    japanese: "バッグをロッカーに預けた。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Let's get some hot soup.",
+    japanese: "温かいスープを食べよう。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Can we sit by the window?",
+    japanese: "窓際に座ってもいい？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I need to stretch my legs.",
+    japanese: "脚をストレッチしたい。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Which trail leads back to the lodge?",
+    japanese: "ロッジに戻るにはどのコースを行けばいいですか？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I can't see the trail signs.",
+    japanese: "コースの標識が見えない。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Let's check the last shuttle time.",
+    japanese: "最終シャトルバスの時間を確認しよう。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Where did we park the car?",
+    japanese: "車はどこに停めたっけ？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "My phone battery died in the cold.",
+    japanese: "寒さで携帯の電池が切れた。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Did you record that run?",
+    japanese: "今の滑りを録画した？",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I finally made a smooth turn.",
+    japanese: "やっと滑らかにターンできた。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "Thanks for being patient with me.",
+    japanese: "焦らせずに付き合ってくれてありがとう。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I'll dry my gear when I get home.",
+    japanese: "家に帰ったら道具を乾かすよ。",
+    thought: "Communicate clearly on the mountain."
+},
+{
+    category: "Snowboard",
+    text: "I'm taking a day off from riding tomorrow.",
+    japanese: "明日は滑るのを休むつもり。",
+    thought: "Communicate clearly on the mountain."
+},
 
 {
     category: "Photography",
@@ -1268,9 +1988,9 @@ const dailyEnglish = [
 },
 {
     category: "Photography",
-    text: "I like taking pictures of nature.",
-    japanese: "自然の写真を撮るのが好き。",
-    thought: "Share your photography interests."
+    text: "I keep my camera in a padded bag.",
+    japanese: "カメラはクッション付きのバッグに入れている。",
+    thought: "Talk about protecting your camera."
 },
 {
     category: "Photography",
@@ -1286,9 +2006,9 @@ const dailyEnglish = [
 },
 {
     category: "Photography",
-    text: "Could you take a picture of me?",
-    japanese: "写真を撮ってもらえる？",
-    thought: "Ask someone to take your photo."
+    text: "Could you hold the camera upright?",
+    japanese: "カメラを縦に構えてもらえる？",
+    thought: "Choose the orientation of your photo."
 },
 {
     category: "Photography",
@@ -1316,9 +2036,9 @@ const dailyEnglish = [
 },
 {
     category: "Photography",
-    text: "That looks great!",
-    japanese: "いい感じ！",
-    thought: "Keep the mood relaxed."
+    text: "I accidentally took a video.",
+    japanese: "間違えて動画を撮ってしまった。",
+    thought: "Explain a simple mistake."
 },
 {
     category: "Photography",
@@ -1343,6 +2063,366 @@ const dailyEnglish = [
     text: "Photography makes me notice things I usually miss.",
     japanese: "写真を撮ってると、普段見逃すものに気づけるんだ。",
     thought: "Talk about why photography matters to you."
+},
+{
+    category: "Photography",
+    text: "Is photography allowed inside?",
+    japanese: "中で写真を撮ってもいいですか？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Do I need permission to use a tripod?",
+    japanese: "三脚を使うには許可が必要ですか？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Please don't use the flash here.",
+    japanese: "ここではフラッシュを使わないでください。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I'd rather not be in the photo.",
+    japanese: "写真には写りたくないです。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "May I share this photo online?",
+    japanese: "この写真をネットで共有してもいいですか？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Please keep this photo private.",
+    japanese: "この写真は公開しないでください。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I'll ask before posting it.",
+    japanese: "投稿する前に確認するね。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Please don't include my address.",
+    japanese: "住所が写らないようにしてください。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Could you remove the tag from that photo?",
+    japanese: "その写真のタグを外してもらえますか？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I won't photograph the children without permission.",
+    japanese: "許可なしに子どもたちの写真は撮りません。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Can everyone fit in the frame?",
+    japanese: "全員が画面に入るかな？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Please stand a little closer together.",
+    japanese: "もう少し寄って立ってください。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Could you hold my bag for a moment?",
+    japanese: "ちょっとバッグを持っていてもらえますか？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I'll set the timer.",
+    japanese: "タイマーをセットするね。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Ready? Three, two, one!",
+    japanese: "準備はいい？ 3、2、1！",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Try to relax your shoulders.",
+    japanese: "肩の力を抜いてみて。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "You can look away from the camera.",
+    japanese: "カメラから目をそらしてもいいよ。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Let's include the whole building.",
+    japanese: "建物全体を入れよう。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "There's someone behind you.",
+    japanese: "あなたの後ろに人がいる。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Let's wait until the path is clear.",
+    japanese: "道に人がいなくなるまで待とう。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "The picture is a bit blurry.",
+    japanese: "写真が少しぼやけている。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I moved the camera by mistake.",
+    japanese: "うっかりカメラを動かしてしまった。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Tap the screen to focus.",
+    japanese: "画面をタップしてピントを合わせて。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "The lens needs cleaning.",
+    japanese: "レンズを拭かないと。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "My finger covered part of the lens.",
+    japanese: "指でレンズの一部を覆ってしまった。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "This photo is too dark.",
+    japanese: "この写真は暗すぎる。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Let's turn off the flash.",
+    japanese: "フラッシュを切ろう。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I can't see the screen in this sunlight.",
+    japanese: "日差しで画面が見えない。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Can you make the image brighter?",
+    japanese: "画像を明るくできますか？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "The camera is focusing on the background.",
+    japanese: "背景にピントが合っている。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I forgot to charge the battery.",
+    japanese: "電池を充電するのを忘れた。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Do you have a spare memory card?",
+    japanese: "予備のメモリーカードを持っている？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "My phone is out of storage.",
+    japanese: "携帯の空き容量がない。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I'll back up the photos tonight.",
+    japanese: "今夜、写真をバックアップするよ。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Don't delete that one yet.",
+    japanese: "その写真はまだ消さないで。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I saved the original file.",
+    japanese: "元のファイルを保存した。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Could you send the full-size version?",
+    japanese: "元のサイズの画像を送ってもらえますか？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I'll put the photos in a shared album.",
+    japanese: "写真を共有アルバムに入れるね。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "The download hasn't finished yet.",
+    japanese: "ダウンロードがまだ終わっていない。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I named the folder after the trip.",
+    japanese: "旅行にちなんだ名前をフォルダーに付けた。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Where was this photo taken?",
+    japanese: "この写真はどこで撮ったの？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "What made you choose this subject?",
+    japanese: "どうしてこれを撮ろうと思ったの？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "The reflection caught my eye.",
+    japanese: "映り込みに目を引かれた。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I like the contrast between light and shadow.",
+    japanese: "光と影の対比が好き。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "This photo tells a story.",
+    japanese: "この写真には物語があるね。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "It reminds me of my hometown.",
+    japanese: "故郷を思い出す。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "How did you get so close to the bird?",
+    japanese: "どうやって鳥にそんなに近づけたの？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I waited a long time for that moment.",
+    japanese: "あの瞬間を長い間待っていた。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "The colors look different on my phone.",
+    japanese: "私の携帯だと色が違って見える。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Did you edit this photo?",
+    japanese: "この写真は編集したの？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I want to learn how to take night photos.",
+    japanese: "夜の写真の撮り方を学びたい。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Do you ever print your photos?",
+    japanese: "写真をプリントすることはある？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I'd like to frame this one.",
+    japanese: "この写真を額に入れたい。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "This would look good on the wall.",
+    japanese: "これは壁に飾るとよさそう。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I'm making a photo book for my family.",
+    japanese: "家族のためにフォトブックを作っている。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Which photo should go on the cover?",
+    japanese: "表紙にはどの写真がいいかな？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I found some old family photos.",
+    japanese: "昔の家族写真を見つけた。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "I took this on our first trip together.",
+    japanese: "これは初めて一緒に旅行したときに撮った。",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Do you remember who took this?",
+    japanese: "誰がこれを撮ったか覚えている？",
+    thought: "Talk about taking and sharing photos."
+},
+{
+    category: "Photography",
+    text: "Let's add a date to the album.",
+    japanese: "アルバムに日付を入れよう。",
+    thought: "Talk about taking and sharing photos."
 },
 
 {
@@ -1377,9 +2457,9 @@ const dailyEnglish = [
 },
 {
     category: "Beach",
-    text: "Where are you from?",
-    japanese: "どこから来たの？",
-    thought: "Get to know the person."
+    text: "When is high tide?",
+    japanese: "満潮はいつですか？",
+    thought: "Ask about the tide."
 },
 {
     category: "Beach",
@@ -1449,15 +2529,15 @@ const dailyEnglish = [
 },
 {
     category: "Beach",
-    text: "Would you like me to take your picture?",
-    japanese: "写真撮ろうか？",
-    thought: "Offer to help naturally."
+    text: "Do you know where the coastal path starts?",
+    japanese: "海沿いの遊歩道がどこから始まるか知っている？",
+    thought: "Find a place to walk."
 },
 {
     category: "Beach",
-    text: "It was nice talking with you.",
-    japanese: "話せてよかったよ。",
-    thought: "End the conversation naturally."
+    text: "Let's meet at the beach entrance tomorrow.",
+    japanese: "明日はビーチの入口で会おう。",
+    thought: "Choose a meeting point."
 },
 {
     category: "Beach",
@@ -1467,9 +2547,9 @@ const dailyEnglish = [
 },
 {
     category: "Beach",
-    text: "The ocean looks beautiful today.",
-    japanese: "今日は海が綺麗だね。",
-    thought: "Start with what you see."
+    text: "The tide is coming in.",
+    japanese: "潮が満ちてきた。",
+    thought: "Notice the changing tide."
 },
 {
     category: "Beach",
@@ -1515,15 +2595,15 @@ const dailyEnglish = [
 },
 {
     category: "Beach",
-    text: "Do you come here often?",
-    japanese: "ここにはよく来るの？",
-    thought: "Start an easy conversation."
+    text: "Is this beach usually this quiet?",
+    japanese: "このビーチは普段もこんなに静かなの？",
+    thought: "Ask about the beach atmosphere."
 },
 {
     category: "Beach",
-    text: "Is this your first time here?",
-    japanese: "ここに来るのは初めて？",
-    thought: "Ask about their experience."
+    text: "Are there any events on the beach today?",
+    japanese: "今日はビーチで何かイベントがある？",
+    thought: "Ask about local activities."
 },
 {
     category: "Beach",
@@ -1585,6 +2665,366 @@ const dailyEnglish = [
     japanese: "一日中ここにいられそう。",
     thought: "Express how much you're enjoying it."
 },
+{
+    category: "Beach",
+    text: "Where is the entrance to the beach?",
+    japanese: "ビーチの入口はどこですか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Is there a fee to use this beach?",
+    japanese: "このビーチは利用料がかかりますか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Where can we change into our swimsuits?",
+    japanese: "どこで水着に着替えられますか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Are there showers near the exit?",
+    japanese: "出口の近くにシャワーはありますか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Can we rent a beach umbrella?",
+    japanese: "ビーチパラソルを借りられますか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "How much is a beach chair for the day?",
+    japanese: "ビーチチェアは一日いくらですか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Is there a place to lock up our things?",
+    japanese: "荷物を鍵付きで預けられる場所はありますか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Where is the nearest restroom?",
+    japanese: "いちばん近いトイレはどこですか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Are dogs allowed on this beach?",
+    japanese: "このビーチに犬を連れてきてもいいですか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "What time does the beach close?",
+    japanese: "ビーチは何時に閉まりますか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "I forgot my sunscreen.",
+    japanese: "日焼け止めを忘れた。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Could you put sunscreen on my back?",
+    japanese: "背中に日焼け止めを塗ってくれる？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Let's find some shade.",
+    japanese: "日陰を探そう。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "The sand is too hot to walk on.",
+    japanese: "砂が熱すぎて歩けない。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "I need to put my sandals on.",
+    japanese: "サンダルを履かないと。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "I'll spread the towel here.",
+    japanese: "ここにタオルを敷くね。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "My towel is covered in sand.",
+    japanese: "タオルが砂だらけだ。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Keep your phone away from the water.",
+    japanese: "携帯を水に近づけないでね。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "I brought a waterproof bag.",
+    japanese: "防水バッグを持ってきた。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Let's move our things farther from the waves.",
+    japanese: "荷物をもっと波から離そう。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Is it safe to swim here today?",
+    japanese: "今日はここで泳いでも安全ですか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "What does that flag mean?",
+    japanese: "あの旗はどういう意味ですか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Is there a lifeguard on duty?",
+    japanese: "ライフガードはいますか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "I'm not a strong swimmer.",
+    japanese: "泳ぎはあまり得意ではない。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "I'd like to stay in the shallow water.",
+    japanese: "浅いところにいたい。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "The current looks strong.",
+    japanese: "流れが強そうだ。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Let's stay inside the swimming area.",
+    japanese: "遊泳区域内にいよう。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "I need a life jacket.",
+    japanese: "ライフジャケットが必要です。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Please keep an eye on the children.",
+    japanese: "子どもたちから目を離さないでね。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Let's ask the lifeguard before going in.",
+    japanese: "入る前にライフガードに聞こう。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "I got salt water in my eyes.",
+    japanese: "目に海水が入った。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "There's a jellyfish over there.",
+    japanese: "あそこにクラゲがいる。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Be careful of the sharp shells.",
+    japanese: "尖った貝殻に気をつけて。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "I cut my foot on a rock.",
+    japanese: "岩で足を切った。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Where is the first aid station?",
+    japanese: "救護所はどこですか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "I feel too hot.",
+    japanese: "暑くてつらい。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Let's get out of the sun.",
+    japanese: "日差しを避けよう。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Do you have any drinking water left?",
+    japanese: "飲み水はまだ残っている？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "We should take a break from swimming.",
+    japanese: "泳ぐのを少し休もう。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "I need to rinse off the salt water.",
+    japanese: "海水を洗い流したい。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Do you want to build a sandcastle?",
+    japanese: "砂のお城を作らない？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "We need a bucket for the sand.",
+    japanese: "砂を入れるバケツが必要だね。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Let's play beach volleyball.",
+    japanese: "ビーチバレーをしよう。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Could you throw the ball back?",
+    japanese: "ボールを投げ返してもらえる？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Is there a place to rent a surfboard?",
+    japanese: "サーフボードを借りられる場所はありますか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "I've never tried snorkeling.",
+    japanese: "シュノーケリングはしたことがない。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Look at the fish under the water.",
+    japanese: "水の中の魚を見て。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "There's a little crab by that rock.",
+    japanese: "あの岩のそばに小さなカニがいる。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Let's leave the shells where they are.",
+    japanese: "貝殻はそのままにしておこう。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Please don't feed the seabirds.",
+    japanese: "海鳥に餌をあげないでください。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Is there a snack stand nearby?",
+    japanese: "近くに軽食の売店はありますか？",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "We packed sandwiches for lunch.",
+    japanese: "お昼用にサンドイッチを持ってきた。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Let's keep the food in the cooler.",
+    japanese: "食べ物はクーラーボックスに入れておこう。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "The wind blew my hat away.",
+    japanese: "風で帽子が飛ばされた。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "A storm seems to be coming.",
+    japanese: "嵐が近づいているみたい。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Let's head back before it gets dark.",
+    japanese: "暗くなる前に戻ろう。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Please pick up your trash.",
+    japanese: "自分のごみは拾ってください。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "I'll take this empty bottle home.",
+    japanese: "この空きボトルは持ち帰るよ。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "Let's check that we haven't left anything.",
+    japanese: "忘れ物がないか確認しよう。",
+    thought: "Enjoy your time at the beach."
+},
+{
+    category: "Beach",
+    text: "There is sand in my shoes.",
+    japanese: "靴の中に砂が入っている。",
+    thought: "Enjoy your time at the beach."
+},
 
 {
     category: "Meeting Someone",
@@ -1606,9 +3046,9 @@ const dailyEnglish = [
 },
 {
     category: "Meeting Someone",
-    text: "Where are you from?",
-    japanese: "どこから来たの？",
-    thought: "Learn a little about her."
+    text: "Did you come straight from work?",
+    japanese: "仕事から直接来たの？",
+    thought: "Start with an easy question."
 },
 {
     category: "Meeting Someone",
@@ -1825,5 +3265,365 @@ const dailyEnglish = [
     text: "Take care. It was great meeting you.",
     japanese: "じゃあね。会えてよかったよ。",
     thought: "End warmly and naturally."
+},
+{
+    category: "Meeting Someone",
+    text: "I'm here for the first time.",
+    japanese: "ここに来るのは初めてです。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I don't think we've met before.",
+    japanese: "まだお会いしたことはないと思います。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I'm a friend of Yuki's.",
+    japanese: "ユキの友達です。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "How do you know the host?",
+    japanese: "主催者とはどういう知り合いですか？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Let me introduce myself.",
+    japanese: "自己紹介させてください。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "You can call me Ken.",
+    japanese: "ケンと呼んでください。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "How do you pronounce your name?",
+    japanese: "お名前はどう発音しますか？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Did I get your name right?",
+    japanese: "お名前の言い方は合っていましたか？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I'm sorry, I've forgotten your name.",
+    japanese: "ごめんなさい、お名前を忘れてしまいました。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Let me introduce you to my friend.",
+    japanese: "友達を紹介するね。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Do you know anyone else here?",
+    japanese: "ここにほかにも知り合いはいる？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Would you like to join our group?",
+    japanese: "私たちのグループに入りませんか？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "We're talking about travel.",
+    japanese: "旅行の話をしているところです。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "There's room for one more person.",
+    japanese: "あと1人入れるよ。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Come and sit with us.",
+    japanese: "こっちで一緒に座ろう。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I'll make some room for you.",
+    japanese: "場所を空けるね。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Would you like something to eat?",
+    japanese: "何か食べますか？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Help yourself to the snacks.",
+    japanese: "お菓子を自由に取ってね。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Have you tried the cake yet?",
+    japanese: "もうケーキは食べてみた？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Shall I get you a plate?",
+    japanese: "お皿を持ってこようか？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "What do you do for work?",
+    japanese: "どんな仕事をしているの？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Are you a student?",
+    japanese: "学生ですか？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "What are you studying?",
+    japanese: "何を勉強しているの？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "How did you choose your job?",
+    japanese: "どうしてその仕事を選んだの？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "What's the best part of your work?",
+    japanese: "仕事のいちばん好きなところは？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I work in a small shop.",
+    japanese: "小さなお店で働いている。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I'm looking for a new job.",
+    japanese: "新しい仕事を探している。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I recently moved to this city.",
+    japanese: "最近この街に引っ越してきた。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I'm getting used to living here.",
+    japanese: "ここでの暮らしに慣れてきた。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "What do you like about this neighborhood?",
+    japanese: "この辺のどんなところが好き？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Do you have any pets?",
+    japanese: "ペットは飼っている？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I grew up with a dog.",
+    japanese: "犬のいる家で育った。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Do you enjoy cooking?",
+    japanese: "料理をするのは好き？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "What's your favorite thing to cook?",
+    japanese: "何を作るのがいちばん好き？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Do you prefer books or movies?",
+    japanese: "本と映画ではどちらが好き？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Have you read anything good lately?",
+    japanese: "最近、何かいい本を読んだ？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Is there a show you'd recommend?",
+    japanese: "おすすめの番組はある？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I listen to music on my way to work.",
+    japanese: "通勤中に音楽を聴いている。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Have you been to a concert recently?",
+    japanese: "最近コンサートに行った？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I'd like to hear your favorite song.",
+    japanese: "あなたの好きな曲を聴いてみたい。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "How did you get into that hobby?",
+    japanese: "その趣味を始めたきっかけは？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Did someone teach you?",
+    japanese: "誰かに教わったの？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "That takes a lot of practice.",
+    japanese: "それはたくさん練習が必要だね。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I'd like to try it one day.",
+    japanese: "いつかやってみたい。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "What would you like to learn next?",
+    japanese: "次は何を学びたい？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Do you prefer the city or the countryside?",
+    japanese: "都会と田舎ではどちらが好き？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "What's a place you'd like to visit?",
+    japanese: "行ってみたい場所はある？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I haven't traveled much yet.",
+    japanese: "まだあまり旅行をしたことがない。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "What was your favorite trip?",
+    japanese: "いちばん気に入った旅行は？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "That sounds like a special memory.",
+    japanese: "大切な思い出なんだね。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Would Saturday afternoon work for you?",
+    japanese: "土曜の午後は都合がいい？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I already have plans that day.",
+    japanese: "その日はもう予定がある。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Could we meet somewhere quieter?",
+    japanese: "もう少し静かな場所で会える？",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Let's invite a few other friends.",
+    japanese: "ほかの友達も何人か誘おう。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "There's no rush to reply.",
+    japanese: "返事は急がなくていいよ。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I prefer to keep my phone number private.",
+    japanese: "電話番号は教えないことにしているんです。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Thanks for letting me know.",
+    japanese: "教えてくれてありがとう。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I need to leave, but please enjoy the party.",
+    japanese: "私は帰らないといけないけれど、パーティーを楽しんでね。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "I'll say goodbye to the host first.",
+    japanese: "先に主催者に挨拶してくるね。",
+    thought: "Get to know someone at a comfortable pace."
+},
+{
+    category: "Meeting Someone",
+    text: "Have a safe trip home.",
+    japanese: "気をつけて帰ってね。",
+    thought: "Get to know someone at a comfortable pace."
 }
 ];

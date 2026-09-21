@@ -3,28 +3,10 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const vm = require('node:vm');
 const http = require('node:http');
-const { execFileSync } = require('node:child_process');
 const { chromium } = require('playwright');
 const root = path.join(__dirname, '..');
-const base = process.env.HORIZON_BASE || '3ebecaf12d7de6ee964e2bb5a0752205b237ecd8';
-const readData = source => vm.runInNewContext(source + '; dailyEnglish');
-const data = readData(fs.readFileSync(path.join(root, 'english.js'), 'utf8'));
-const old = readData(execFileSync('git', ['show', `${base}:english.js`], {cwd: root}).toString());
-const morning = data.filter(x => x.category === 'Morning');
-assert.equal(morning.length, 100);
-assert.equal(new Set(morning.map(x => x.text.toLowerCase().replace(/[^a-z0-9]/g, ''))).size, 100);
-assert.equal(JSON.stringify(morning.slice(0,40)), JSON.stringify(old.filter(x => x.category === 'Morning')));
-assert.equal(JSON.stringify(data.filter(x => x.category !== 'Morning')), JSON.stringify(old.filter(x => x.category !== 'Morning')));
-for(const item of morning){
-  assert.ok(item.text && /[ぁ-んァ-ヶ一-龠]/u.test(item.japanese) && item.thought);
-  assert.deepEqual(Object.keys(item).sort(), ['category', 'japanese', 'text', 'thought']);
-}
-for(const file of ['service-worker.js', 'manifest.json']){
-  assert.equal(fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n'), execFileSync('git',['show',`${base}:${file}`],{cwd:root}).toString().replace(/\r\n/g,'\n'));
-}
-console.log('PASS data: 100 unique Morning sentences; original 40 and all other categories unchanged; translations present; PWA files unchanged');
+require('./english-data.cjs');
 const server = http.createServer((req,res) => {
   const file = path.join(root, req.url === '/' ? 'index.html' : req.url.split('?')[0]);
   if(!file.startsWith(root) || !fs.existsSync(file)){res.writeHead(404).end();return;}
@@ -76,7 +58,29 @@ const correction = {meaning:'伝わりました',naturalEnglish:'I went shopping
   for(const category of ['Morning','Conversation','Snowboard','Photography','Beach','Meeting Someone']){
    await page.locator('#practiceMode').selectOption(category);
    assert.match(await text('englishCategory'),new RegExp(category));
-   await page.locator('#nextEnglishBtn').click();await page.locator('#prevEnglishBtn').click();
+   const cycle = await page.evaluate(() => {
+    currentPracticeIndex=99;
+    const seen=[];
+    for(let i=0;i<100;i++){
+     showNextEnglish();
+     seen.push({text:englishSentence.textContent,japanese:japaneseSentence.textContent,progress:phraseProgress.textContent});
+    }
+    return seen;
+   });
+   assert.equal(new Set(cycle.map(x=>x.text)).size,100);
+   cycle.forEach((item,i)=>{assert.equal(item.progress,`${i+1} / 100`);assert.match(item.japanese,/[ぁ-んァ-ヶ一-龠]/u);});
+   await page.locator('#nextEnglishBtn').click();assert.equal(await text('phraseProgress'),'1 / 100');
+   await page.locator('#prevEnglishBtn').click();assert.equal(await text('phraseProgress'),'100 / 100');
+   await page.evaluate(()=>window.testSpoken=[]);
+   await page.locator('#listenBtn').click();await page.waitForFunction(()=>window.testSpoken.length>0);
+   assert.equal(await page.evaluate(()=>window.testSpoken[0]),await text('englishSentence'));
+   await page.locator('#speakBtn').click();
+   await page.evaluate(()=>window.testRecognition.result(document.getElementById('englishSentence').textContent));
+   assert.equal(await page.locator('#spokenCheck').isChecked(),true);
+   await page.locator('#practiceOrder').selectOption('random');
+   const previous=await text('englishSentence');await page.locator('#nextEnglishBtn').click();
+   assert.notEqual(await text('englishSentence'),previous);
+   await page.locator('#practiceOrder').selectOption('sequence');
   }
   await page.locator('#practiceOrder').selectOption('random');
   assert.equal(await page.locator('#prevEnglishBtn').isDisabled(),true);
