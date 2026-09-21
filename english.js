@@ -257,6 +257,367 @@ const dailyEnglish = [
 },
 
 {
+    "category": "Morning",
+    "text": "I made some toast for breakfast.",
+    "japanese": "朝ごはんにトーストを作った。",
+    "thought": "Talk about your daily routine."
+},
+{
+    "category": "Morning",
+    "text": "I usually drink tea in the morning.",
+    "japanese": "普段、朝はお茶を飲む。",
+    "thought": "Talk about your daily routine."
+},
+{
+    "category": "Morning",
+    "text": "I need to do the laundry.",
+    "japanese": "洗濯をしないと。",
+    "thought": "Talk about your daily routine."
+},
+{
+    "category": "Morning",
+    "text": "I'm going to clean my room.",
+    "japanese": "部屋を掃除するつもり。",
+    "thought": "Talk about your daily routine."
+},
+{
+    "category": "Morning",
+    "text": "I forgot my umbrella.",
+    "japanese": "傘を忘れた。",
+    "thought": "Talk about your daily routine."
+},
+{
+    "category": "Morning",
+    "text": "I take the train to work.",
+    "japanese": "電車で通勤している。",
+    "thought": "Talk about your daily routine."
+},
+{
+    "category": "Morning",
+    "text": "I brought my lunch today.",
+    "japanese": "今日はお弁当を持ってきた。",
+    "thought": "Talk about your daily routine."
+},
+{
+    "category": "Morning",
+    "text": "I need to buy some milk.",
+    "japanese": "牛乳を買わないと。",
+    "thought": "Talk about your daily routine."
+},
+{
+    "category": "Morning",
+    "text": "I'll cook dinner tonight.",
+    "japanese": "今夜は夕飯を作るよ。",
+    "thought": "Talk about your daily routine."
+},
+{
+    "category": "Morning",
+    "text": "I start work at nine.",
+    "japanese": "仕事は9時に始まる。",
+    "thought": "Talk about work."
+},
+{
+    "category": "Morning",
+    "text": "I have a meeting this afternoon.",
+    "japanese": "今日の午後は会議がある。",
+    "thought": "Talk about work."
+},
+{
+    "category": "Morning",
+    "text": "I'm working from home today.",
+    "japanese": "今日は在宅勤務だ。",
+    "thought": "Talk about work."
+},
+{
+    "category": "Morning",
+    "text": "Can you help me with this?",
+    "japanese": "これを手伝ってくれる？",
+    "thought": "Talk about work."
+},
+{
+    "category": "Morning",
+    "text": "I'll check my email first.",
+    "japanese": "まずメールを確認するよ。",
+    "thought": "Talk about work."
+},
+{
+    "category": "Morning",
+    "text": "Let's talk after lunch.",
+    "japanese": "お昼ごはんの後で話そう。",
+    "thought": "Talk about work."
+},
+{
+    "category": "Morning",
+    "text": "I finished my work early.",
+    "japanese": "仕事が早く終わった。",
+    "thought": "Talk about work."
+},
+{
+    "category": "Morning",
+    "text": "Could you show me how to do this?",
+    "japanese": "これのやり方を教えてもらえる？",
+    "thought": "Talk about work."
+},
+{
+    "category": "Morning",
+    "text": "I'll be there in ten minutes.",
+    "japanese": "10分でそちらに着くよ。",
+    "thought": "Talk about work."
+},
+{
+    "category": "Morning",
+    "text": "I have a slight headache.",
+    "japanese": "少し頭が痛い。",
+    "thought": "Talk about how you feel."
+},
+{
+    "category": "Morning",
+    "text": "My throat is a little sore.",
+    "japanese": "喉が少し痛い。",
+    "thought": "Talk about how you feel."
+},
+{
+    "category": "Morning",
+    "text": "I need to get some rest.",
+    "japanese": "少し休まないと。",
+    "thought": "Talk about how you feel."
+},
+{
+    "category": "Morning",
+    "text": "I'm feeling better today.",
+    "japanese": "今日は体調が良くなっている。",
+    "thought": "Talk about how you feel."
+},
+{
+    "category": "Morning",
+    "text": "I should drink more water.",
+    "japanese": "もっと水を飲んだほうがいい。",
+    "thought": "Talk about how you feel."
+},
+{
+    "category": "Morning",
+    "text": "I'm going to bed early tonight.",
+    "japanese": "今夜は早く寝るつもり。",
+    "thought": "Talk about how you feel."
+},
+{
+    "category": "Morning",
+    "text": "I feel more awake after a shower.",
+    "japanese": "シャワーを浴びると目が覚める。",
+    "thought": "Talk about how you feel."
+},
+{
+    "category": "Morning",
+    "text": "I'm a bit nervous today.",
+    "japanese": "今日は少し緊張している。",
+    "thought": "Talk about how you feel."
+},
+{
+    "category": "Morning",
+    "text": "I feel relaxed after a walk.",
+    "japanese": "散歩するとリラックスできる。",
+    "thought": "Talk about how you feel."
+},
+{
+    "category": "Morning",
+    "text": "It's cloudy this morning.",
+    "japanese": "今朝は曇っている。",
+    "thought": "Talk about the weather."
+},
+{
+    "category": "Morning",
+    "text": "It's colder than yesterday.",
+    "japanese": "昨日より寒い。",
+    "thought": "Talk about the weather."
+},
+{
+    "category": "Morning",
+    "text": "The sun is coming out.",
+    "japanese": "日が差してきた。",
+    "thought": "Talk about the weather."
+},
+{
+    "category": "Morning",
+    "text": "Is it raining outside?",
+    "japanese": "外は雨が降っている？",
+    "thought": "Talk about the weather."
+},
+{
+    "category": "Morning",
+    "text": "I think I'll need a jacket.",
+    "japanese": "上着が必要そうだ。",
+    "thought": "Talk about the weather."
+},
+{
+    "category": "Morning",
+    "text": "The weather is perfect for a walk.",
+    "japanese": "散歩にぴったりの天気だ。",
+    "thought": "Talk about the weather."
+},
+{
+    "category": "Morning",
+    "text": "I hope it stays sunny.",
+    "japanese": "このまま晴れているといいな。",
+    "thought": "Talk about the weather."
+},
+{
+    "category": "Morning",
+    "text": "It's starting to snow.",
+    "japanese": "雪が降り始めた。",
+    "thought": "Talk about the weather."
+},
+{
+    "category": "Morning",
+    "text": "I'm meeting a friend for lunch.",
+    "japanese": "友達と会ってお昼ごはんを食べる予定だ。",
+    "thought": "Talk about your plans."
+},
+{
+    "category": "Morning",
+    "text": "I'll stop by the store on my way home.",
+    "japanese": "帰りにお店に寄るよ。",
+    "thought": "Talk about your plans."
+},
+{
+    "category": "Morning",
+    "text": "I'm going to visit my family this weekend.",
+    "japanese": "今週末は家族に会いに行くつもり。",
+    "thought": "Talk about your plans."
+},
+{
+    "category": "Morning",
+    "text": "I have a dentist appointment tomorrow.",
+    "japanese": "明日は歯医者の予約がある。",
+    "thought": "Talk about your plans."
+},
+{
+    "category": "Morning",
+    "text": "I'll leave home at eight.",
+    "japanese": "8時に家を出るよ。",
+    "thought": "Talk about your plans."
+},
+{
+    "category": "Morning",
+    "text": "I want to try a new cafe.",
+    "japanese": "新しいカフェに行ってみたい。",
+    "thought": "Talk about your plans."
+},
+{
+    "category": "Morning",
+    "text": "I'm going to read a book tonight.",
+    "japanese": "今夜は本を読むつもり。",
+    "thought": "Talk about your plans."
+},
+{
+    "category": "Morning",
+    "text": "Let's meet at the station.",
+    "japanese": "駅で会おう。",
+    "thought": "Talk about your plans."
+},
+{
+    "category": "Morning",
+    "text": "Did you sleep well?",
+    "japanese": "よく眠れた？",
+    "thought": "Start some small talk."
+},
+{
+    "category": "Morning",
+    "text": "How was your weekend?",
+    "japanese": "週末はどうだった？",
+    "thought": "Start some small talk."
+},
+{
+    "category": "Morning",
+    "text": "Did you have breakfast yet?",
+    "japanese": "もう朝ごはんを食べた？",
+    "thought": "Start some small talk."
+},
+{
+    "category": "Morning",
+    "text": "That coffee smells good.",
+    "japanese": "そのコーヒー、いい香りだね。",
+    "thought": "Start some small talk."
+},
+{
+    "category": "Morning",
+    "text": "Do you live near here?",
+    "japanese": "この近くに住んでいるの？",
+    "thought": "Start some small talk."
+},
+{
+    "category": "Morning",
+    "text": "What are you having for lunch?",
+    "japanese": "お昼は何を食べるの？",
+    "thought": "Start some small talk."
+},
+{
+    "category": "Morning",
+    "text": "I watched a good movie last night.",
+    "japanese": "昨夜、いい映画を見た。",
+    "thought": "Start some small talk."
+},
+{
+    "category": "Morning",
+    "text": "Do you know a good cafe nearby?",
+    "japanese": "近くにいいカフェを知っている？",
+    "thought": "Start some small talk."
+},
+{
+    "category": "Morning",
+    "text": "Would you like some tea?",
+    "japanese": "お茶はいかが？",
+    "thought": "Start some small talk."
+},
+{
+    "category": "Morning",
+    "text": "Can we practice English together?",
+    "japanese": "一緒に英語を練習してもいい？",
+    "thought": "Start a conversation in English."
+},
+{
+    "category": "Morning",
+    "text": "Do you have a minute to chat?",
+    "japanese": "少しおしゃべりする時間はある？",
+    "thought": "Start a conversation in English."
+},
+{
+    "category": "Morning",
+    "text": "Can I ask you something?",
+    "japanese": "ちょっと聞いてもいい？",
+    "thought": "Start a conversation in English."
+},
+{
+    "category": "Morning",
+    "text": "I'm trying to speak English every day.",
+    "japanese": "毎日英語を話すようにしている。",
+    "thought": "Start a conversation in English."
+},
+{
+    "category": "Morning",
+    "text": "Please tell me if I make a mistake.",
+    "japanese": "間違えたら教えてね。",
+    "thought": "Start a conversation in English."
+},
+{
+    "category": "Morning",
+    "text": "What does this word mean?",
+    "japanese": "この単語はどういう意味？",
+    "thought": "Start a conversation in English."
+},
+{
+    "category": "Morning",
+    "text": "Could you write that down for me?",
+    "japanese": "それを書いてもらえる？",
+    "thought": "Start a conversation in English."
+},
+{
+    "category": "Morning",
+    "text": "Thanks for helping me practice.",
+    "japanese": "練習を手伝ってくれてありがとう。",
+    "thought": "Start a conversation in English."
+},
+
+{
 
     category: "Conversation",
     text: "Hi, how are you?",

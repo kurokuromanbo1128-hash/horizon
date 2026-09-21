@@ -743,6 +743,17 @@ background: rgba(40,40,50,0.92);
 color: white;
 }
 /* ===== Horizon Thought ===== */
+#nightTalk { overflow-wrap: anywhere; }
+#nightGuide fieldset { border: 1px solid currentColor; border-radius: 12px; }
+#nightGuide label { display: inline-flex; align-items: center; min-height: 44px; margin-right: 12px; cursor: pointer; }
+#nightGuide input { margin-right: 6px; }
+#nightGuide details { margin: 10px 0; padding: 10px; background: rgba(255,255,255,0.16); border-radius: 10px; }
+#nightGuide summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; }
+#nightGuide p { white-space: pre-line; line-height: 1.7; }
+#nightTypedAnswer { display: block; width: 100%; box-sizing: border-box; margin: 8px 0; padding: 12px; font: inherit; resize: vertical; }
+#nightTalk button { min-height: 44px; max-width: 100%; white-space: normal; }
+#nightTalk label[for="nightTypedAnswer"] { display: block; margin-top: 16px; }
+
 
 #dailyEnglish{
 margin-bottom:20px;

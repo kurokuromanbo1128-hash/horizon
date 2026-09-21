@@ -1520,6 +1520,9 @@ let nightAnswers = [
 
 function updateNightQuestion(){
 
+    renderNightGuide(currentNightQuestion);
+    document.getElementById("nightTypedAnswer").value = nightAnswers[currentNightQuestion];
+
     nightQuestion.textContent =
     nightQuestions[currentNightQuestion];
 
@@ -1532,6 +1535,8 @@ function updateNightQuestion(){
 }
 
 function showNextNightQuestion(){
+
+    if(nightSpeakBtn.disabled) return;
 
     currentNightQuestion++;
 
@@ -1547,6 +1552,9 @@ function showNextNightQuestion(){
 
 function speakNightAnswer(){
 
+    if(nightSpeakBtn.disabled) return;
+    const answerIndex = currentNightQuestion;
+
     const SpeechRecognition =
     window.SpeechRecognition ||
     window.webkitSpeechRecognition;
@@ -1554,14 +1562,25 @@ function speakNightAnswer(){
     if(!SpeechRecognition){
 
         nightSpeechResult.textContent =
-        "❌ Speech recognition is not supported.";
+        "音声認識に対応していません。下の入力欄で練習できます。";
+
+        document.getElementById("nightTypedAnswer").focus();
 
         return;
 
     }
 
-    const recognition =
-    new SpeechRecognition();
+    let recognition;
+    try{
+        recognition = new SpeechRecognition();
+    }catch(error){
+        nightSpeechResult.textContent = "音声認識を開始できません。下の入力欄で練習できます。";
+        return;
+    }
+
+    nightSpeakBtn.disabled = true;
+    nextNightBtn.disabled = true;
+    document.getElementById("nightSubmitBtn").disabled = true;
 
     recognition.lang = "en-US";
     recognition.continuous = false;
@@ -1582,49 +1601,77 @@ function speakNightAnswer(){
         const result =
         event.results[0][0].transcript.trim();
 
-        nightAnswers[currentNightQuestion] = result;
-
-        nightSpeechResult.textContent =
-        "🎤 You said: " + result;
-
-        if(currentNightQuestion === nightQuestions.length - 1){
-
-    showNightSummary();
-
-    completeNightTalk();
-
-}
+        submitNightAnswer(result, answerIndex);
 
     };
 
     recognition.onerror = (event) => {
 
         nightSpeechResult.textContent =
-        "❌ Error: " + event.error;
+        "音声認識できませんでした。再試行するか、下の入力欄で練習できます。";
+
+        releaseNightControls();
 
     };
 
     recognition.onend = () => {
 
-        nightSpeakBtn.disabled = false;
+        releaseNightControls();
 
     };
 
-    recognition.start();
+    function releaseNightControls(){
+        nightSpeakBtn.disabled = false;
+        nextNightBtn.disabled = false;
+        document.getElementById("nightSubmitBtn").disabled = false;
+    }
 
+    try{
+        recognition.start();
+    }catch(error){
+        releaseNightControls();
+        nightSpeechResult.textContent = "音声認識を開始できません。下の入力欄で練習できます。";
+    }
+
+}
+
+function submitNightAnswer(value, questionIndex = currentNightQuestion){
+    const answer = value.trim();
+    if(!answer){
+        nightSpeechResult.textContent = "英語で回答を入力するか、Speakで話してください。";
+        return;
+    }
+    if(questionIndex !== currentNightQuestion) return;
+    nightAnswers[questionIndex] = answer;
+    document.getElementById("nightTypedAnswer").value = answer;
+    nightSpeechResult.textContent = "🎤 You said: " + answer;
+    // Both speech and typing use the existing coach, including repeat attempts.
+    document.dispatchEvent(new CustomEvent("night-answer", {
+        detail: { question: nightQuestions[questionIndex], english: answer }
+    }));
+    if(nightAnswers.every(item => item.trim())){
+        showNightSummary();
+        completeNightTalk();
+    }
 }
 
 function showNightSummary(){
 
-    nightSummary.innerHTML =
-    "<h3>🌙 Tonight's Talk</h3>" +
-    "<p>1. " + nightAnswers[0] + "</p>" +
-    "<p>2. " + nightAnswers[1] + "</p>" +
-    "<p>3. " + nightAnswers[2] + "</p>";
+    nightSummary.replaceChildren();
+    const heading = document.createElement("h3");
+    heading.textContent = "🌙 Tonight's Talk";
+    nightSummary.append(heading);
+    nightAnswers.forEach((answer, index) => {
+        const paragraph = document.createElement("p");
+        paragraph.textContent = `${index + 1}. ${answer}`;
+        nightSummary.append(paragraph);
+    });
 
 }
 
 function completeNightTalk(){
+
+    if(!nightAnswers.every(item => item.trim())) return;
 
     const today =
     getTodayKey();
@@ -1925,6 +1972,11 @@ function registerServiceWorker(){
 ================================================== */
 
 function initializeApp(){
+
+    updateNightQuestion();
+    document.getElementById("nightSubmitBtn").addEventListener("click", () => {
+        submitNightAnswer(document.getElementById("nightTypedAnswer").value);
+    });
 
     altitudeText.textContent =
     `${altitude}m`;

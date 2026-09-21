@@ -19,8 +19,15 @@
     panel.style.textAlign = "left";
     nightSpeechResult.insertAdjacentElement("afterend", panel);
 
-    let lastSignature = "";
     let lastHeard = "";
+    let requestId = 0;
+    let activeRequest;
+
+    function cancelCorrection(){
+        requestId++;
+        if(activeRequest) activeRequest.abort();
+        activeRequest = null;
+    }
 
     const escapeHtml = (value) => {
         const div = document.createElement("div");
@@ -37,7 +44,7 @@
         if(!retry) return;
         retry.addEventListener("click", () => {
             panel.innerHTML = "";
-            lastSignature = "";
+            cancelCorrection();
             lastHeard = "";
             nightSpeechResult.textContent = "🎤 You said:";
             nightSpeakBtn.click();
@@ -61,8 +68,8 @@
                 <strong>🎧 Speech recognition</strong><br>
                 ${escapeHtml(lastHeard)}<br><br>
                 <strong>🤖 Horizon AI Coach</strong><br>
-                AI correction is temporarily unavailable.<br>
-                If the recognized sentence is different from what you said, try again.
+                AI添削は一時的に利用できません。回答は受け付けました。<br>
+                このまま次の質問へ進めます。手入力で直して再送信することもできます。
                 ${retryButton()}
             </div>`;
         wireRetry();
@@ -84,11 +91,17 @@
     }
 
     async function requestCorrection(question, english){
+        cancelCorrection();
+        const id = requestId;
+        const controller = new AbortController();
+        activeRequest = controller;
+        const timeout = setTimeout(() => controller.abort(), 15000);
         lastHeard = english;
         showChecking(english);
         try{
             const response = await fetch(HORIZON_AI_URL, {
                 method: "POST",
+                signal: controller.signal,
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ question, english })
             });
@@ -96,35 +109,23 @@
             if(!response.ok){
                 throw new Error(data.details || data.error || "AI correction failed.");
             }
-            showCorrection(data);
+            if(id === requestId) showCorrection(data);
         }catch(error){
-            console.error("Horizon AI Error:", error);
-            showError();
+            if(id === requestId) showError();
+        }finally{
+            clearTimeout(timeout);
+            if(id === requestId) activeRequest = null;
         }
     }
 
-    const speechObserver = new MutationObserver(() => {
-        const text = nightSpeechResult.textContent.trim();
-        const prefix = "🎤 You said:";
-        if(!text.startsWith(prefix)) return;
-        const english = text.slice(prefix.length).trim();
-        if(!english) return;
-        const question = nightQuestion.textContent.trim();
-        const signature = `${question}|||${english}`;
-        if(signature === lastSignature) return;
-        lastSignature = signature;
+    document.addEventListener("night-answer", (event) => {
+        const { question, english } = event.detail;
         requestCorrection(question, english);
     });
 
-    speechObserver.observe(nightSpeechResult, {
-        childList:true,
-        subtree:true,
-        characterData:true
-    });
-
     const questionObserver = new MutationObserver(() => {
+        cancelCorrection();
         panel.innerHTML = "";
-        lastSignature = "";
         lastHeard = "";
     });
 
